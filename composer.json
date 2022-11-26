@@ -1,0 +1,26 @@
+{
+  "name": "mguinea/php-criteria",
+  "description": "PHP Criteria object to implement specification pattern",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marc Guinea",
+      "email": "develop.marcguinea@gmail.com"
+    }
+  ],
+  "require": {
+		"php": "^8.1"
+  },
+	"require-dev": {
+    "phpstan/phpstan": "^1.9"
+	},
+	"autoload": {
+		"psr-4": {
+			"Mguinea\\Criteria\\": "src/"
+		}
+	},
+	"scripts": {
+		"phpstan": "./vendor/bin/phpstan analyse src --level=9"
+	}
+}
