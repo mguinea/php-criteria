@@ -13,14 +13,21 @@
 		"php": "^8.1"
   },
 	"require-dev": {
-    "phpstan/phpstan": "^1.9"
+    "phpstan/phpstan": "^1.9",
+		"phpunit/phpunit": "^9.5"
 	},
 	"autoload": {
 		"psr-4": {
 			"Mguinea\\Criteria\\": "src/"
 		}
 	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	},
 	"scripts": {
-		"phpstan": "./vendor/bin/phpstan analyse src --level=9"
+		"phpstan": "./vendor/bin/phpstan analyse src --level=9",
+		"tests": "./vendor/bin/phpunit"
 	}
 }
